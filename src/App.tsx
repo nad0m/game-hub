@@ -4,6 +4,7 @@ import { Lobby } from 'boardgame.io/react';
 import { TicTacToeBoard } from './TicTacToeBoard';
 
 function App() {
+  console.log(import.meta.env.VITE_ATOM_SOCKET_API);
   return (
     <Lobby
       gameServer={`http://${window.location.hostname}:8000`}
