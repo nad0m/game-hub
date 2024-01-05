@@ -7,8 +7,8 @@ function App() {
   console.log(import.meta.env.VITE_ATOM_SOCKET_API);
   return (
     <Lobby
-      gameServer={`http://${window.location.hostname}:8000`}
-      lobbyServer={`http://${window.location.hostname}:8000`}
+      gameServer={import.meta.env.VITE_ATOM_SOCKET_API}
+      lobbyServer={import.meta.env.VITE_ATOM_SOCKET_API}
       gameComponents={[{ game: TicTacToe, board: TicTacToeBoard }]}
     />
   );
